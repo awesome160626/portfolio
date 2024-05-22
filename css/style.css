@@ -99,7 +99,7 @@ body {
 
 
 
-/* 시작 */
+/* 포트폴리오시작 */
 
 .Greetings {
     width: 1440px; /* Greetings 요소의 너비 */
@@ -123,6 +123,10 @@ body {
     height: auto; /* 높이는 자동 조정 */
     text-align: center; /* 이미지 내부 요소를 가운데 정렬 */ 
 }
+
+
+/* 프로필 시작*/
+
 .profile {
     width: 1440px; /* 섹션의 너비 */
     height: 900px; /* 섹션의 높이 */
@@ -193,7 +197,7 @@ body {
     line-height: 30px; /* 각 줄 사이의 간격 */
 }
 
-/* 라라스윗 */
+/* 라라스윗 시작 */
 .LaraSweet {
     width: 1440px; /* 섹션의 너비 */
     height: 900px; /* 섹션의 높이 */
@@ -234,6 +238,8 @@ body {
     border-radius: 100px;
     border: none;
     outline: none; /* 포커스 테두리 제거 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+    transition: background-color 0.3s ease; /* 배경색 변경 시 부드러운 전환 효과 */
 }
 .LaraSweet button:hover {
  background-color: #ffffff;
@@ -276,9 +282,9 @@ body {
 }
 .Typography .left-panel p {
     font-size: 16px;
-    color: #2B2C34;
+    color: #ffffff;
     line-height: 30px; /* 각 줄 사이의 간격을 20px로 설정 */   
-    margin-left: 10px;
+    margin-left: 0px;
 }
 .Typography .iconconbox1 {
     margin-top: 53px;
@@ -286,6 +292,10 @@ body {
     align-items: center;
 }
 
+.Typography .iconconbox1 p {
+color: #2B2C34;
+margin-left: 10px;
+}    
 
 /* 타이포그래피 오른쪽 */
 
@@ -324,15 +334,20 @@ body {
 }
 .Banner .left-panel p {
     font-size: 16px;
-    color: #2B2C34;
+    color: #ffffff;
     line-height: 30px; /* 각 줄 사이의 간격을 20px로 설정 */   
-    margin-left: 10px;
+   
 }
 .Banner .iconconbox1 {
     margin-top: 53px;
     display: flex;
     align-items: center;  
 }
+
+.Banner  .iconconbox1 p {
+    color: #2B2C34;
+    margin-left: 10px;
+    }    
 
 
 /* 광고배너 오른쪽 */
@@ -374,15 +389,21 @@ body {
 }
 .GraceVegan .left-panel p {
     font-size: 16px;
-    color: #2B2C34;
+    color: #ffffff;
     line-height: 30px; /* 각 줄 사이의 간격을 20px로 설정 */   
-    margin-left: 10px;
+    
 }
 .GraceVegan .iconconbox1 {
     margin-top: 53px;
     display: flex;
     align-items: center;  
 }
+
+.GraceVegan  .iconconbox1 p {
+    color: #2B2C34;
+    margin-left: 10px;
+    }    
+
 
 
 /* 토리골토마토 */
@@ -410,15 +431,20 @@ body {
 }
 .Tomato .left-panel p {
     font-size: 16px;
-    color: #2B2C34;
+    color: #ffffff;
     line-height: 30px; /* 각 줄 사이의 간격을 20px로 설정 */   
-    margin-left: 10px;
+
 }
 .Tomato .iconconbox1 {
     margin-top: 53px;
     display: flex;
     align-items: center;  
 }
+
+.Tomato .iconconbox1 p {
+    color: #2B2C34;
+    margin-left: 10px;
+    }    
 
 
 /* 마우스 효과 시작*/
