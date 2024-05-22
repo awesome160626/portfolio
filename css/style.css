@@ -8,7 +8,7 @@
 body {
     text-align: center; /* 텍스트를 가운데 정렬 */
     font-family: 'Pretendard-Regular'; /* 폰트를 'Pretendard-Regular'로 설정 */
-    
+
 }
 
 .wrap {
@@ -19,25 +19,65 @@ body {
 
 /* 레이어팝업 서브01 */
 
-.popup{
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    z-index: 9999; 
-    background: rgba(0,0,0,.5); 
-    width: 100%; 
-    height: 100%; 
-    padding-top: 50px; 
-    display: none;
+/* 팝업 전체 영역 스타일 */
+.popup {
+    position: fixed; /* 화면 고정 위치 */
+    top: 0; /* 화면 맨 위에 배치 */
+    left: 0; /* 화면 맨 왼쪽에 배치 */
+    z-index: 9999; /* 다른 요소들보다 위에 표시 */
+    background: rgba(0,0,0,.5); /* 배경색과 투명도 설정 */
+    width: 100%; /* 화면 전체 너비로 확장 */
+    height: 100%; /* 화면 전체 높이로 확장 */
+    padding-top: 50px; /* 상단 여백 설정 */
+    display: none; /* 초기에는 숨김 상태 */
 }
 
-.popup .close{
-    position: absolute; 
-    top: 20px; 
-    left: 50%; 
-    transform: translateX(-50%);
+/* 팝업 닫기 버튼 스타일 */
+.popup .close {
+    position: absolute; /* 부모 요소를 기준으로 위치 지정 */
+    background-color: #FEBC37; /* 배경컬러 */
+    width: 50px; /* 넓이 */
+    height: 50px; /* 높이 */
+    border-radius: 50%; /* 모서리 라운드 */
+    top: 20px; /* 상단 여백 */
+    left: 50%; /* 가운데 정렬을 위해 왼쪽 위치 조정 */
+    transform: translateX(-50%); /* 수평 가운데 정렬 */
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+    transition: background-color 0.3s ease; /* 배경색 변경 시 부드러운 전환 효과 */
 }
 
+.popup .close:hover {
+    background-color: #fff; /* 호버 시 배경색을 흰색으로 변경 */
+}
+
+
+/* 팝업 Go 버튼 스타일 */
+.popup .go {
+    position: absolute; /* 부모 요소를 기준으로 위치 지정 */
+    background-color: #FEBC37; /* 배경컬러 */
+    width: 100px; /* 넓이 */
+    height: 50px; /* 높이 */
+    border-radius: 100px; /* 모서리 라운드 */
+    top: 750px; /* 상단 여백 */
+    right: 10%; /* 오른쪽 여백  */
+    transform: translateX(-50%); /* 수평 가운데 정렬 */
+    text-align: center; /* 글자 중앙 정렬 */
+    line-height: 50px; /* 글자 문단 간격 */
+    cursor: pointer; /* 커서 포인트 손모양 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+    transition: background-color 0.3s ease; /* 배경색 변경 시 부드러운 전환 효과 */
+}
+
+.popup .go:hover {
+    background-color: #fff; /* 호버 시 배경색을 흰색으로 변경 */
+}
+
+.popup .subpage-container a.go {
+    color: inherit; /* 부모 요소로부터 폰트 색상 상속 */
+}
 
 
 
