@@ -61,8 +61,8 @@ body {
     width: 100px; /* 넓이 */
     height: 50px; /* 높이 */
     border-radius: 100px; /* 모서리 라운드 */
-    top: 750px; /* 상단 여백 */
-    right: 10%; /* 오른쪽 여백  */
+    bottom: 50px; /* 아래쪽 여백 */
+    right: 40px; /* 오른쪽 여백  */
     transform: translateX(-50%); /* 수평 가운데 정렬 */
     text-align: center; /* 글자 중앙 정렬 */
     line-height: 50px; /* 글자 문단 간격 */
@@ -88,13 +88,20 @@ body {
     width: 1200px;
     margin: auto;
     height: 800px;
-    overflow-y: scroll;
+    overflow: hidden;
     background: #fff;
+    position: relative;
 }
 
 .subpage-container img {
     max-width: 100%;
     height: auto;
+}
+
+.subpage-container div {
+    width: 1200px;
+    height: 800px;
+    overflow-y: scroll;
 }
 
 
